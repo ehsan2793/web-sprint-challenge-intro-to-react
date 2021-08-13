@@ -1,8 +1,11 @@
 // Write your Character component here
 import React,{useState} from "react";
 import styled from "styled-components"
+
+
 //===============================
-import Details from './Character'
+import Details from "./Details"
+
 
 const Container =styled.div `
 background-color: rgb(0, 0, 0 ,0.5);;
@@ -26,22 +29,14 @@ font-size: 1.2rem;
 
 
 `;
+// ================================  components
+
 
 const Character = (props) => {
 const character = props.character;
 
-  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  const [info, SetInfo] = useState(null);
-  const openInfo = (index) => {
-    SetInfo(index)
-  }
 
-  const closeInfo = () => {
-    SetInfo(null)
-  }
-
-  // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+  
     return (
         <div>
         <Container>
@@ -50,19 +45,19 @@ const character = props.character;
             <h2> {character.birth_year}</h2>
             
         </Container>
+{/* // ================= ================================ */}
+        <Details people={props.character}/>
 
-{/* ======================================================== */}
-<div>
-
-</div>
-{/* ======================================================== */}
-            <h2>Gender: {character.gender}</h2>
-            <h2>Height: {character.height}</h2>
-            <h2>Mass: {character.mass}</h2>
-           
-            <h2>Eye color: {character.eye_color}</h2>
-            <h2>Hair color{character.hair_color}</h2>
-            <h2>Skin_color{character.skin_color}</h2>
+ {/* ================================================================= */}
+                {/* <div>
+                    <h2>Gender: {character.gender}</h2>
+                    <h2>Height: {character.height}</h2>
+                    <h2>Mass: {character.mass}</h2>
+                
+                    <h2>Eye color: {character.eye_color}</h2>
+                    <h2>Hair color{character.hair_color}</h2>
+                    <h2>Skin_color{character.skin_color}</h2>
+                </div> */}
         
         </div>
     )
