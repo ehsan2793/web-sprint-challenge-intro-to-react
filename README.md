@@ -88,7 +88,7 @@ need to answer this
 
 2. Describe component state.
 
-  component state are component or (functions) that are dynamic and iteractive and can be change by the user. Component state has two premerter 1) value and 2) function in which give us the ablility to update out value
+  component state are component ord (functions) that are dynamic and iteractive and can be change by the user. Component state has two premerter 1) value and 2) function in which give us the ablility to update out value
 
 3. Describe props.
 
