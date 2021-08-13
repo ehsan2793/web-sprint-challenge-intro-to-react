@@ -97,4 +97,4 @@ need to answer this
 
 4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
 
- ❌side effects are things that are ouside of the function and are effect when the function is being executed 
+ ❌side effects are things that are ouside of the function and are effect when the function is being executed dad
