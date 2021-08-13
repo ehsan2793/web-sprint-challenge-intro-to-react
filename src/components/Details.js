@@ -6,8 +6,8 @@ const OutsideContainer =styled.div`
  background-color: rgb(255, 255, 255,0.3);
   box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
   border-radius: 8px;
-  margin: 16px;
-  padding: 16px 8px 12px 16px;
+  /* margin: 16px; */
+  padding: 16px 8px 12px 8px;
   
 
 `;
