@@ -5,7 +5,8 @@ function Details(props) {
     // console.log(props.people);
     const people = props.people;
 console.log(people);
-const [details, setDetails] = useState(null)
+const close = props.close
+
     return (
         
         <div>
@@ -18,7 +19,7 @@ const [details, setDetails] = useState(null)
                     <h2>Hair color {people.hair_color}</h2>
                     <h2>Skin color{people.skin_color}</h2>
                 </div>
-                <button>close</button>
+                <button onClick={props.close}>close</button>
         </div>
     )
     

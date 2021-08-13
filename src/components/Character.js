@@ -35,18 +35,31 @@ font-size: 1.2rem;
 const Character = (props) => {
 const character = props.character;
 
+// ================================
+const [detail,setDetail] =useState(null)
+const openDetails = id => {
+    setDetail(id)
+  }
 
+  const closeDetails = () => {
+    setDetail(null)
+  }
+//==================================
   
     return (
         <div>
         <Container>
             <h2> {character.name}</h2>
-            <Button>More Information</Button>
+            <Button onClick={()=>openDetails(character)}>More Information</Button>
             <h2> {character.birth_year}</h2>
             
         </Container>
 {/* // ================= ================================ */}
-        <Details people={props.character}/>
+{
+        detail && <Details people={detail} close={closeDetails} />
+      }
+        {/* <Details people={props.character}/>        */}
+                                                                            {/* // dont erase this only the line above */}
 
  {/* ================================================================= */}
                 {/* <div>
