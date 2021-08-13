@@ -1,5 +1,38 @@
 import React,{useState} from 'react';
+import styled from "styled-components"
 
+const OutsideContainer =styled.div`
+ border: 1px solid rgb(210, 210, 210);
+ background-color: rgb(255, 255, 255,0.3);
+  box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px 8px 12px 16px;
+  
+
+`;
+const H2 =styled.h2`
+color: black;
+text-shadow:1px 1px yellow;
+text-transform: uppercase;
+  
+
+`;
+const Button =styled.button `
+box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
+border-radius: 20px;
+background-color: lightgrey;
+padding: 8px 18px;
+font-size: 1.2rem;
+cursor: pointer;
+
+
+`;
+
+const Span =styled.span`
+color: white;
+text-shadow:3px 3px red;
+`;
 
 function Details(props) {
     
@@ -10,18 +43,18 @@ const close = props.close
 
     return (
         
-        <div>
+        <OutsideContainer>
                 <div>
-                    <h2>Gender: {people.gender} </h2>
-                    <h2>Height: {people.height} </h2>
-                    <h2>Mass: {people.mass} </h2>
+                    <H2> <Span>Gender : </Span> {people.gender} </H2>
+                    <H2><Span>Height : </Span> {people.height} </H2>
+                    <H2> <Span>Mass : </Span>{people.mass} </H2>
                 
-                    <h2>Eye color:{people.eye_color} </h2>
-                    <h2>Hair color {people.hair_color}</h2>
-                    <h2>Skin color{people.skin_color}</h2>
+                    <H2><Span>Eye color : </Span>{people.eye_color} </H2>
+                    <H2> <Span>Hair color : </Span> {people.hair_color}</H2>
+                    <H2> <Span>Skin color : </Span>{people.skin_color}</H2>
                 </div>
-                <button onClick={props.close}>close</button>
-        </div>
+                <Button onClick={props.close}>close</Button>
+        </OutsideContainer>
     )
     
 }

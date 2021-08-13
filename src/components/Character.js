@@ -18,17 +18,10 @@ width: 100%;
   padding: 16px 0px 12px 0px;
   display: flex;
   justify-content: space-evenly;
+  cursor: pointer;
 // style goes here
 `;
-const Button =styled.button `
-box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
-border-radius: 20px;
-background-color: lightgrey;
-padding: 16px 8px;
-font-size: 1.2rem;
 
-
-`;
 // ================================  components
 
 
