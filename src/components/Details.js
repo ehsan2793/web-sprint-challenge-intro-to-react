@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+// import React,{useState} from 'react';
 import styled from "styled-components"
 
 const OutsideContainer =styled.div`
@@ -38,7 +38,7 @@ function Details(props) {
     
     // console.log(props.people);
     const people = props.people;
-console.log(people);
+// console.log(people);
 const close = props.close
 
     return (
@@ -53,7 +53,7 @@ const close = props.close
                     <H2> <Span>Hair color : </Span> {people.hair_color}</H2>
                     <H2> <Span>Skin color : </Span>{people.skin_color}</H2>
                 </div>
-                <Button onClick={props.close}>close</Button>
+                <Button onClick={close}>close</Button>
         </OutsideContainer>
     )
     
