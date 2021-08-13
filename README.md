@@ -81,6 +81,18 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+need to answer this
+   ❌ React is a open source libray that that was develop by facebook. React is very powerful tool that give the devloper to devolop reusable pieces  of UI and use these samll pieces to create a large project
+   react creates a virtual Dom and when the data changes by the user React will compare the changes in the vertual dom to the DOM and it will only update the those places that change happened in.
+
 1. Describe component state.
+
+  component state are component or (functions) that are dynamic and iteractive and can be change by the user. Component state has two premerter 1) value and 2) function in which give us the ablility to update out value
+
 1. Describe props.
+
+  props are properties and are similar to function premeters, and when a key: value object is passed to the children by the parent component props would act as the property of the chikd.
+
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
