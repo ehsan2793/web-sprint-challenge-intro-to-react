@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 
+
 function Details(props) {
     
     // console.log(props.people);

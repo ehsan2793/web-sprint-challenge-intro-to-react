@@ -48,9 +48,9 @@ const openDetails = id => {
   
     return (
         <div>
-        <Container>
+        <Container onClick={()=>openDetails(character)}>
             <h2> {character.name}</h2>
-            <Button onClick={()=>openDetails(character)}>More Information</Button>
+          
             <h2> {character.birth_year}</h2>
             
         </Container>
