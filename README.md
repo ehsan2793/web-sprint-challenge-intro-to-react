@@ -81,9 +81,9 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
 need to answer this
-   ❌ React is a open source libray that that was develop by facebook. React is very powerful tool that give the devloper to devolop reusable pieces  of UI and use these samll pieces to create a large project
+
+   React is a open source libray that that was develop by facebook. React is very powerful tool that give the devloper to devolop reusable pieces  of UI and use these samll pieces to create a large project
    react creates a virtual Dom and when the data changes by the user React will compare the changes in the vertual dom to the DOM and it will only update the those places that change happened in.
 
 2. Describe component state.
@@ -97,4 +97,5 @@ need to answer this
 
 4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
 
- ❌side effects are things that are ouside of the function and are effect when the function is being executed dad
+ side effects are things that are ouside of the function and are effect when the function is being executed, side effects can can casue the pure state or props to return a diifrent output that what it was inistailly 
+ react give us the ability to mange these side effect tand to avoud error using Effect hook
